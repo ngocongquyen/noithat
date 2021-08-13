@@ -1,0 +1,127 @@
+/* Tablet and mobile */
+@media (max-width:1023px) {
+    .content__navbar-logo {
+        display: none;
+    }
+    .content__navbar {
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+
+    .content__navbar-bars{
+        display: block;
+    }
+
+    .content__navbar-bars {
+        cursor: pointer;
+    }
+    .content__navbar-bars__icon {
+        font-size:1.8rem;
+    }
+
+    .content__navbar-list {
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        z-index: 10;
+        width: 100%;
+        top: 34px;
+        left: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 5px 11px 4px #000000; 
+        box-shadow: 0px 5px 11px 4px #000000;
+        transition: all ;
+        animation: fadeTop 0.3s  ease-in;
+        display: none;
+    }
+
+    @keyframes fadeTop {
+        from {
+            opacity: 0;
+            
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    .content__navbar-link {
+        padding: 10px 20px;
+        font-size:1.4rem;
+    }
+
+    .content__navbar-link:hover {
+        background-color:red;
+        color:#fff;
+    }
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .header__information {
+        display: none;
+    }
+
+    .content__navbar-list {
+        top:64px;
+    }
+
+    .home-sign__name {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+
+}
+/* Mobile */
+@media (max-width:740px) {
+    .main {
+        overflow: hidden;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .slider__img {
+        height:250px;
+    }
+    
+    .home-news__img {
+        height:100%;
+        object-fit: cover;
+    }
+    .home__product-banner__img {
+        height:150px;
+    }
+
+    .home-news__wrapper{
+        margin-bottom: 10px;
+    }
+    .home-sign {
+        margin-top: 40px;
+        margin-bottom:0;
+    }
+
+    .home-sign__name {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .home-sign__desc {
+        font-size: 1.2rem;
+        padding:0 10px;
+        margin-bottom: 10px;
+    }
+
+    .home-sign__input {
+        font-size:1.4rem;
+        padding:10px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
